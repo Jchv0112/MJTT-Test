@@ -1,0 +1,80 @@
+---
+import Hero from "../components/Hero.astro";
+import SobreNosotros from "../components/SobreNosotros.astro";
+import Navbar from "../components/Navbar.astro";
+import Destinos from "../components/Destinos.astro";
+import Servicios from "../components/Servicios.astro";
+import Beneficios from "../components/Beneficios.astro";
+import Asesoras from "../components/Asesoras.astro";
+import Footer from "../components/Footer.astro";
+
+
+import "../styles/global.css";
+
+import "aos/dist/aos.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MJ Tour & Travel</title>
+    <meta
+          name="description"
+          content="Agencia de viajes especializada en destinos nacionales e internacionales. Atención personalizada por WhatsApp."
+        />
+    <meta property="og:title" content="MJ Tour & Travel" />
+    <meta property="og:description" content="Viajes sin preocupaciones." />
+    <meta property="og:image" content="/preview.jpg" />
+  </head>
+
+  <body>
+
+    <Navbar />
+    <Hero />
+    <SobreNosotros />
+    <Destinos />
+    <Servicios />
+    <Beneficios />
+    <Asesoras />
+    <Footer />
+
+    <!-- BOTÓN WHATSAPP -->
+    <a
+  href="https://wa.me/5215551371157"
+  target="_blank"
+  class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    class="w-8 h-8"
+  >
+    <path
+      d="M20.52 3.48A11.86 11.86 0 0012.04 0C5.4 0 .02 5.38.02 12c0 2.1.54 4.16 1.58 5.98L0 24l6.2-1.62A11.93 11.93 0 0012.04 24c6.62 0 12-5.38 12-12 0-3.2-1.24-6.2-3.52-8.52zM12.04 21.8a9.8 9.8 0 01-5-1.38l-.36-.22-3.68.96.98-3.58-.24-.38A9.78 9.78 0 012.24 12c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.92 2.88A9.7 9.7 0 0121.84 12c0 5.4-4.4 9.8-9.8 9.8z"
+    />
+  </svg>
+</a>
+
+    <!-- AOS -->
+  <script>
+  import("aos").then((AOS) => {
+
+    AOS.default.init({
+
+      duration: 900,
+
+      once: true,
+
+    });
+  });
+
+</script>
+<script>
+  window.history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
+</script>
+  </body>
+
+</html>

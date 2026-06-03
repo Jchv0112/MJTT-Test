@@ -1,0 +1,79 @@
+---
+const destinos = [
+  {
+    nombre: "Riviera Maya",
+    imagen: "/Cancun.webp"
+  },
+  {
+    nombre: "Canada",
+    imagen: "/Canada.webp"
+  },
+  {
+    nombre: "Europa",
+    imagen: "/Europa3.webp"
+  }
+];
+---
+
+<section
+  id="destinos"
+  class="py-24 bg-[#FFF9F5]"
+>
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- TITULO -->
+    <div class="text-center mb-16">
+
+      <p class="text-pink-400 font-semibold uppercase tracking-widest">
+        Destinos
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mt-3">
+        Explora el mundo con nosotros 🌎
+      </h2>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      {destinos.map((destino) => (
+
+        <div
+          data-aos="zoom-in"
+          class="group relative rounded-3xl overflow-hidden shadow-xl cursor-pointer"
+        >
+
+          <!-- IMAGEN -->
+          <img
+            src={destino.imagen}
+            alt={destino.nombre}
+            class="w-full h-[450px] object-cover group-hover:scale-110 transition duration-700"
+          />
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+          <!-- TEXTO -->
+          <div class="absolute bottom-6 left-6 text-white">
+
+            <h3 class="text-3xl font-bold">
+              {destino.nombre}
+            </h3>
+
+            <p class="text-white/80 mt-2">
+              Descubre experiencias inolvidables
+            </p>
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>

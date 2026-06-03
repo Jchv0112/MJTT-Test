@@ -1,0 +1,128 @@
+---
+
+---
+
+<nav
+  class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+>
+
+  <div
+    class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+  >
+
+    <!-- LOGO -->
+    <a
+      href="#inicio"
+      class="flex items-center gap-3"
+    >
+
+      <img
+        src="/Logo.png"
+        alt="Logo"
+        class="w-12 h-12 object-contain"
+      />
+
+      <div>
+
+        <h1 class="font-bold text-lg text-gray-800">
+          MJ Tour & Travel
+        </h1>
+
+        <p class="text-sm text-gray-500">
+          Viaja sin preocupaciones
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="hidden md:flex items-center gap-8">
+
+      <ul class="flex gap-8 text-gray-700 font-medium">
+
+        <li>
+          <a href="#destinos" class="hover:text-pink-400 transition">
+            Destinos
+          </a>
+        </li>
+
+        <li>
+          <a href="#servicios" class="hover:text-pink-400 transition">
+            Servicios
+          </a>
+        </li>
+
+        <li>
+          <a href="#contacto" class="hover:text-pink-400 transition">
+            Contacto
+          </a>
+        </li>
+
+      </ul>
+
+      <a
+        href="https://wa.me/5215551371157"
+        target="_blank"
+        class="bg-pink-300 hover:bg-pink-400 text-white px-5 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-pink-300/40 hover:scale-105"
+      >
+        Reservar
+      </a>
+
+    </div>
+
+    <!-- MOBILE BUTTON -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-3xl text-gray-800"
+    >
+      ☰
+    </button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100"
+  >
+
+    <div class="flex flex-col px-6 py-6 gap-5 text-lg font-medium text-gray-700">
+
+      <a href="#destinos" class="hover:text-pink-400 transition">
+        Destinos
+      </a>
+
+      <a href="#servicios" class="hover:text-pink-400 transition">
+        Servicios
+      </a>
+
+      <a href="#contacto" class="hover:text-pink-400 transition">
+        Contacto
+      </a>
+
+      <a
+        href="https://wa.me/5215551371157"
+        target="_blank"
+        class="bg-pink-300 hover:bg-pink-400 text-white px-5 py-3 rounded-full font-medium text-center transition-all duration-300"
+      >
+        Reservar
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- SCRIPT -->
+<script>
+
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+  });
+
+</script>

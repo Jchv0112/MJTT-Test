@@ -1,0 +1,120 @@
+---
+const asesoras = [
+  {
+    nombre: "Janis",
+    descripcion: "Viajes familiares y paquetes vacacionales",
+    imagen: "/Janis.webp",
+    whatsapp: "https://wa.me/5215551371157"
+  },
+
+  {
+    nombre: "Jazmin",
+    descripcion: "Especialista en destinos internacionales",
+    imagen: "/Jazmin.webp",
+    whatsapp: "https://wa.me/5219981157451"
+  },
+
+  {
+    nombre: "Fernanda",
+    descripcion: "Atención personalizada y soporte",
+    imagen: "/Fernanda.webp",
+    whatsapp: "https://wa.me/5219982337968"
+  }
+];
+---
+
+<section class="py-24 bg-white">
+
+  <!-- TITULO -->
+
+  <div class="text-center mb-16" data-aos="fade-up">
+
+    <p class="text-pink-400 font-semibold tracking-widest uppercase mb-3">
+
+      Nuestro equipo
+
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+
+      Asesoras de viaje
+
+    </h2>
+
+    <p class="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">
+
+      Elige con quién deseas hablar directamente por WhatsApp.
+
+    </p>
+
+  </div>
+
+  <!-- ASESORAS -->
+
+  <div
+
+    class="max-w-4xl mx-auto flex justify-center items-center gap-20 flex-wrap px-6"
+
+  >
+
+    {asesoras.map((asesora, index) => (
+
+      <a
+
+        href={asesora.whatsapp}
+
+        target="_blank"
+
+        data-aos="fade-up"
+
+        data-aos-delay={index * 100}
+
+        class="group text-center"
+
+      >
+
+        <!-- FOTO -->
+
+        <div class="relative">
+
+          <img
+
+            src={asesora.imagen}
+
+            alt={asesora.nombre}
+
+            class="w-32 h-32 object-cover rounded-full shadow-xl group-hover:scale-105 transition duration-300"
+
+          />
+
+          <!-- ONLINE -->
+
+          <div class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 rounded-full border-2 border-white">
+
+          </div>
+
+        </div>
+
+        <!-- NOMBRE -->
+
+        <h3 class="mt-5 text-xl font-semibold text-gray-900">
+
+          {asesora.nombre}
+
+        </h3>
+
+        <!-- STATUS -->
+
+        <p class="text-gray-500 text-sm mt-1">
+
+          Disponible ahora
+
+        </p>
+
+      </a>
+
+    ))}
+
+  </div>
+
+</section>

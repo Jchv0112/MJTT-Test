@@ -2,15 +2,18 @@
 const destinos = [
   {
     nombre: "Riviera Maya",
-    imagen: "/Cancun.webp"
+    imagen: "/Cancun.webp",
+    descripcion: "Playas paradisíacas, cenotes y resorts todo incluido."
   },
   {
     nombre: "Canada",
-    imagen: "/Canada.webp"
+    imagen: "/Canada.webp",
+    descripcion: "Naturaleza impresionante y ciudades llenas de vida."
   },
   {
     nombre: "Europa",
-    imagen: "/Europa3.webp"
+    imagen: "/Europa3.webp",
+    descripcion: "Historia, cultura y destinos inolvidables."
   }
 ];
 ---
@@ -63,7 +66,7 @@ const destinos = [
             </h3>
 
             <p class="text-white/80 mt-2">
-              Descubre experiencias inolvidables
+              {destino.descripcion}
             </p>
 
           </div>

@@ -67,4 +67,4 @@ npm run dev
 ## Author
 
 **Juan Carlos Hernández Vega**
-[GitHub](https://github.com/Jchv0112) • [LinkedIn](https://linkedin.com/in/) • [Email](mailto:jcarloshdez0112@gmail.com)
+[GitHub](https://github.com/Jchv0112) • [LinkedIn](https://www.linkedin.com/in/juan-hdez-vega-60bab927a/) • [Email](mailto:jcarloshdez0112@gmail.com)

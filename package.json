@@ -12,13 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.3",
     "aos": "^2.3.4",
     "astro": "^7.2.4",
     "lucide-astro": "^0.556.0",
-    "tailwindcss": "^4.3.0"
-  },
-  "overrides": {
-    "vite": "^7"
+    "tailwindcss": "^4.3.3"
   }
 }
